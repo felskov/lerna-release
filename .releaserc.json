@@ -6,12 +6,10 @@
     }],
     "@semantic-release/release-notes-generator",
     "@semantic-release/github",
-    ["@semantic-release/git", {
-      "assets": ["package.json", "CHANGELOG.md"],
-      "message": "chore(release): ${nextRelease.version} [skip ci]"
-    }],
+    "@semantic-release/git",
     ["@semantic-release/exec", {
-      "publishCmd": "npx lerna publish ${nextRelease.version} --yes --no-git-tag-version"
+      "prepareCmd": "npx lerna version ${nextRelease.version} --yes --no-git-tag-version",
+      "publishCmd": "npx lerna exec npm publish"
     }]
   ]
 }
