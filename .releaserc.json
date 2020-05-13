@@ -10,7 +10,9 @@
     }],
     "@semantic-release/release-notes-generator",
     "@semantic-release/github",
-    "@semantic-release/git",
+    ["@semantic-release/git", {
+      "assets": ["package.json", "CHANGELOG.md"]
+    }],
     ["@semantic-release/exec", {
       "publishCmd": "npx lerna publish ${nextRelease.version} --yes --no-git-tag-version"
     }]
