@@ -2,11 +2,7 @@
   "branches": ["master", "release"],
   "plugins": [
     ["@semantic-release/commit-analyzer", {
-      "preset": "conventionalcommits",
-      "releaseRules": [
-        {"type": "feat", "release": "patch"},
-        {"scope": "no-release", "release": false}
-      ]
+      "preset": "conventionalcommits"
     }],
     "@semantic-release/release-notes-generator",
     "@semantic-release/github",
