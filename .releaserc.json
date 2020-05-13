@@ -12,8 +12,7 @@
     "@semantic-release/github",
     "@semantic-release/git",
     ["@semantic-release/exec", {
-      "prepareCmd": "npx lerna version ${nextRelease.version} --yes --no-git-tag-version",
-      "publishCmd": "npx lerna publish from-package --yes"
+      "publishCmd": "npx lerna publish ${nextRelease.version} --yes --no-git-tag-version"
     }]
   ]
 }
