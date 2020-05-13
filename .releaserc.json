@@ -6,10 +6,10 @@
     }],
     "@semantic-release/release-notes-generator",
     "@semantic-release/github",
-    "@semantic-release/git",
     ["@semantic-release/exec", {
       "prepareCmd": "npx lerna version ${nextRelease.version} --yes --no-git-tag-version",
       "publishCmd": "npx lerna exec npm publish"
-    }]
+    }],
+    "@semantic-release/git"
   ]
 }
