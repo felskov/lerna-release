@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.1.8 (2020-05-13)</small>
+
+* fix: properly push all assets in @semantic-release/git ([f699a26](https://github.com/felskov/lerna-release/commit/f699a26))
+
+
+
+
+
 ## <small>1.1.7 (2020-05-13)</small>
 
 * fix: move @semantic-release/git to last phase of plugins ([7b21f20](https://github.com/felskov/lerna-release/commit/7b21f20))

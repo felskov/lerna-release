@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.1.8 (2020-05-13)</small>
+
+**Note:** Version bump only for package @felskov/lerna-pkg2
+
+
+
+
+
 ## <small>1.1.1 (2020-05-13)</small>
 
 **Note:** Version bump only for package @felskov/lerna-pkg2
