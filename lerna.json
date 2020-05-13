@@ -1,0 +1,14 @@
+{
+  "version": "1.1.8",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "changelogPreset": "conventionalcommits",
+      "forcePublish": true,
+      "registry": "https://npm.pkg.github.com/"
+    }
+  }
+}

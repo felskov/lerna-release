@@ -1,0 +1,21 @@
+name: release
+on:
+  push:
+    branches: [master, release]
+
+jobs:
+  release:
+    name: "semantic-release"
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com
+      - run: npm ci
+      - run: npx lerna@3 bootstrap
+      - run: npx semantic-release@17
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
