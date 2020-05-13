@@ -1,7 +1,6 @@
 {
   "name": "lerna-release",
   "private": true,
-  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:felskov/lerna-release.git"

@@ -10,6 +10,14 @@
       "prepareCmd": "npx lerna version ${nextRelease.version} --yes --no-git-tag-version",
       "publishCmd": "npx lerna exec npm publish"
     }],
-    "@semantic-release/git"
+    ["@semantic-release/git", {
+      "assets": [
+        "package.json",
+        "lerna.json",
+        "CHANGELOG.md",
+        "packages/*/package.json",
+        "packages/*/CHANGELOG.md"
+      ]
+    }]
   ]
 }
